@@ -1,0 +1,14 @@
+Professor's Comments
+**The Goal is to increase systematicity
+
+1. Lose The Color
+2. What d
+
+Unique Objects
+Professor's ideas: Animals, Comic Creatures. 
+Should have similar overall Appearance.
+This should be easy to create with the existing Quaddle Code. 
+
+
+To Create a unique object set with Existing Code:
+Generate an object table.

@@ -1,0 +1,3 @@
+C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator/cmake-build-debug/CMakeFiles/ObjectTableGenerator.dir
+C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator/cmake-build-debug/CMakeFiles/rebuild_cache.dir

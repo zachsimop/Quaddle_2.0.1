@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator/main.cpp
+iostream
+-
+fstream
+-
+random
+-
+
