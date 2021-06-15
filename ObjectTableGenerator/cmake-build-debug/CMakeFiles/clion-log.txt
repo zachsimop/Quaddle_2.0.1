@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/clang++.exe -G "CodeBlocks - MinGW Makefiles" "C:\Users\zachs\Documents\Lab\Quaddle 2.0\ObjectTableGenerator"
+"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/clang++.exe -G "CodeBlocks - MinGW Makefiles" C:\Users\zachs\Documents\Lab\Quaddle_2.0.1\ObjectTableGenerator
 -- The C compiler identification is GNU 10.3.0
 -- The CXX compiler identification is Clang 12.0.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator/cmake-build-debug
+-- Build files have been written to: C:/Users/zachs/Documents/Lab/Quaddle_2.0.1/ObjectTableGenerator/cmake-build-debug

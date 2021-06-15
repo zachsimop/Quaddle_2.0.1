@@ -40,12 +40,12 @@ rollout copyRight "Copyright License" width:800 height:300
 	(
 			--FOLDER PATHS--FOLDER PATHS--FOLDER PATHS !!!
 			--all scripts need to be in sysInfo.currentdir
-			sysInfo.currentdir = "C:\\Users\\zachs\\Documents\\Lab\\Quaddle 2.0\\Test Driver\\"
-			savePathBase =  "C:\\Users\\zachs\\Documents\\Lab\\Quaddle 2.0\\Test Driver\\images\\"
+			sysInfo.currentdir = "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\"
+			savePathBase =  "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\images\\"
 			makeDir savePathBase
 			--textures for main body
-			textureMainPath =  "C:\\Users\\zachs\\Documents\\Lab\\Quaddle 2.0\\Test Driver\\Patterns and Object Table\\Patterns and Colours\\"
-			objTable = openFile "C:\\Users\\zachs\\Documents\\Lab\\Quaddle 2.0\\Test Driver\\Patterns and Object Table\\myObjectTable.txt"
+			textureMainPath =  "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\Patterns and Object Table\\Patterns and Colours\\"
+			objTable = openFile "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\Patterns and Object Table\\myObjectTable.txt"
 
 			QuaddleDims = #("Body", "Colour", "Pattern",  "Arm_Angle","Arm_Ends")
 			QuaddleVals = #(#("Oblong","Pyramidal"),#("More_Red","More_Orange"),#("Diamond","Checkered"),#("Bent_Up","Bent_Down"), #("Flat", "Blunt", "Pointed", "Flared"))

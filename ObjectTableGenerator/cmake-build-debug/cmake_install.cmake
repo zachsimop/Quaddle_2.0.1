@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator
+# Install script for directory: C:/Users/zachs/Documents/Lab/Quaddle_2.0.1/ObjectTableGenerator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/zachs/Documents/Lab/Quaddle 2.0/ObjectTableGenerator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/zachs/Documents/Lab/Quaddle_2.0.1/ObjectTableGenerator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

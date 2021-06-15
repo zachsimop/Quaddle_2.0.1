@@ -1015,7 +1015,7 @@ data: objData ShapeVals: ShapeVals objVals: objVals shapeMaterial: shapeMaterial
 
 --Makes the Shape Object
 fn MakeShapeObject 
-objVals: objVals objNames:objNames shapeMaterial: shapeMaterial savePathFinal: savePathFinal = 
+objVals: objVals objNames:objNames shapeMaterial: shapeMaterial = 
 (
 	
 	local qArray = #()

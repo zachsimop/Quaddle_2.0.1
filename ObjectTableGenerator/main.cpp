@@ -4,7 +4,7 @@
 #include <random>
 
 //CONSTANTS
-const std::string FPATH = "C:\\Users\\zachs\\Documents\\Lab\\Quaddle 2.0\\Test Driver\\Patterns and Object Table\\myObjectTable.txt";
+const std::string FPATH = "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\Patterns and Object Table\\myObjectTable.txt";
 
 const size_t OBJTYPELENGTH = 3;
 const size_t MAXQLENGTH = 5;
@@ -16,7 +16,7 @@ const size_t  MAXQVALS[MAXQLENGTH] = {2,2,2,2,4};
 const size_t  MAXPVALS[MAXPLENGTH] = {2,4};
 const size_t  MAXSVALS[MAXSLENGTH] = {7};
 
-const size_t NUMOBJECTSDEFAULT = 5;
+const size_t NUMOBJECTSDEFAULT = 30;
 const size_t DEFAULTSTACKNUM = 2;
 const std::string NEWOBJECT = "---\n";
 const std::string ENDTABLE = "***";
@@ -34,10 +34,10 @@ bool isShape(std::string obj);
 
 int main() {
 
-    int numObjects;
-    int stackHeight;
+//    int numObjects;
+//    int stackHeight;
 
-    displayInstructions();
+    //displayInstructions();
 
 //GET FILE LOCATION
 
@@ -49,21 +49,23 @@ int main() {
     std::random_device genRand;
     while(i < NUMOBJECTSDEFAULT){
 
-        //Determine the Kind of Shape
-        object = "";
-        object += OBJTYPE[genRand() % OBJTYPELENGTH];
+        for (size_t j = 0; j < DEFAULTSTACKNUM; j++) {
+            //Determine the Kind of Shape
+            object = "";
+            object += OBJTYPE[genRand() % OBJTYPELENGTH];
 
-        if( isQuaddle(object) )
-            object += addObjectProperties(MAXQVALS, MAXQLENGTH, genRand);
+            if (isQuaddle(object))
+                object += addObjectProperties(MAXQVALS, MAXQLENGTH, genRand);
 
-        if( isPedastal(object) )
-            object += addObjectProperties(MAXPVALS, MAXPLENGTH, genRand);
+            if (isPedastal(object))
+                object += addObjectProperties(MAXPVALS, MAXPLENGTH, genRand);
 
-        if( isShape(object) )
-            object += addObjectProperties(MAXSVALS, MAXSLENGTH, genRand);
+            if (isShape(object))
+                object += addObjectProperties(MAXSVALS, MAXSLENGTH, genRand);
 
-        outfile << object << std::endl;
-        std::cout<<object << std::endl;
+            outfile << object << std::endl;
+            std::cout << object << std::endl;
+        }
 
         if(i != NUMOBJECTSDEFAULT-1) {
             outfile << NEWOBJECT;
