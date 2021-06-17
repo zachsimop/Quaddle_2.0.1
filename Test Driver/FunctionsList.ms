@@ -974,10 +974,15 @@ if findItem PedastalDims "Arms" != 0 do
 	outMap = Bitmaptexture filename: (texturePath)
 	pbody.material = standardMaterial diffuseMap:(outMap)
 	map = uvwmap()
+	
 	addModifier pbody map
 	pbody.pivot = pbody.center
-	rot_box = EulerAngles 0 90 0
+	rot_box = EulerAngles 0 -90 0
 	rotate pbody rot_box
+	if(findString texturePath "Chinese" != 0) then (
+			rot_box = EulerAngles 90 0 0
+			rotate pbody rot_box
+	)
 	append qArray pbody
 --  mymaterial = multiSubMaterial 
 -- 	select pbody
@@ -1211,9 +1216,9 @@ data: objData objName: objName =
 (
 	
 	if(objName == "") then 
-		objName = substring data 1 2
+		objName = substring data 1 data.count
 	else
-		objName = objName + "_" + substring data 1 2
+		objName = objName + "_" + substring data 1 data.count
 	
 	return objName
 	

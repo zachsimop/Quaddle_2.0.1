@@ -88,6 +88,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/zachs/Documents/Lab/Quaddle_2.0.1/ObjectTableGenerator/functions.cpp">
+			<Option target="ObjectTableGenerator"/>
+		</Unit>
+		<Unit filename="C:/Users/zachs/Documents/Lab/Quaddle_2.0.1/ObjectTableGenerator/functions.h">
+			<Option target="ObjectTableGenerator"/>
+		</Unit>
 		<Unit filename="C:/Users/zachs/Documents/Lab/Quaddle_2.0.1/ObjectTableGenerator/main.cpp">
 			<Option target="ObjectTableGenerator"/>
 		</Unit>

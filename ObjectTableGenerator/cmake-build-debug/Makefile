@@ -141,6 +141,33 @@ ObjectTableGenerator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectTableGenerator.dir\build.make CMakeFiles/ObjectTableGenerator.dir/build
 .PHONY : ObjectTableGenerator/fast
 
+functions.obj: functions.cpp.obj
+
+.PHONY : functions.obj
+
+# target to build an object file
+functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectTableGenerator.dir\build.make CMakeFiles/ObjectTableGenerator.dir/functions.cpp.obj
+.PHONY : functions.cpp.obj
+
+functions.i: functions.cpp.i
+
+.PHONY : functions.i
+
+# target to preprocess a source file
+functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectTableGenerator.dir\build.make CMakeFiles/ObjectTableGenerator.dir/functions.cpp.i
+.PHONY : functions.cpp.i
+
+functions.s: functions.cpp.s
+
+.PHONY : functions.s
+
+# target to generate assembly for a file
+functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjectTableGenerator.dir\build.make CMakeFiles/ObjectTableGenerator.dir/functions.cpp.s
+.PHONY : functions.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -177,6 +204,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ObjectTableGenerator
+	@echo ... functions.obj
+	@echo ... functions.i
+	@echo ... functions.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

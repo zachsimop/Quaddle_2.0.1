@@ -9,6 +9,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Werror -Wextra -pedant
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp functions.cpp functions.h)
 
 add_executable(ObjectTableGenerator ${SOURCE_FILES})

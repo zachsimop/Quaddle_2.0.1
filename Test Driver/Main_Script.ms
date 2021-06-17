@@ -45,13 +45,13 @@ rollout copyRight "Copyright License" width:800 height:300
 			makeDir savePathBase
 			--textures for main body
 			textureMainPath =  "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\Patterns and Object Table\\Patterns and Colours\\"
-			objTable = openFile "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\Patterns and Object Table\\myObjectTable.txt"
+			objTable = openFile "C:\\Users\\zachs\\Documents\\Lab\\Quaddle_2.0.1\\Test Driver\\Patterns and Object Table\\object_table.txt"
 
 			QuaddleDims = #("Body", "Colour", "Pattern",  "Arm_Angle","Arm_Ends")
 			QuaddleVals = #(#("Oblong","Pyramidal"),#("More_Red","More_Orange"),#("Diamond","Checkered"),#("Bent_Up","Bent_Down"), #("Flat", "Blunt", "Pointed", "Flared"))
 
 			PedastalDims = #("Character","Arm_Ends")
-			PedastalVals = #(#("Banana.jpg","Key.png"),#("Flat", "Blunt", "Pointed", "Flared"))
+			PedastalVals = #(#("Chinese_Letter1.png","Chinese_Letter2.png"),#("Flat", "Blunt", "Pointed", "Flared"))
 				
 			ShapeDims = #("Shape")
 			ShapeVals = #("Cone","Pyramid","Hedra","Pentagon","Gengon","Carrot","Spring")			
@@ -66,7 +66,7 @@ rollout copyRight "Copyright License" width:800 height:300
 			customObjectPercentages = #()
 			customObjecetPercentages = loadCustomPercentages()
 						
-			shapeTexture= Bitmaptexture  fileName: (textureMainPath + "13_13_13")
+			shapeTexture= Bitmaptexture  fileName: (textureMainPath + "70_70_70.png")	
 			shapeMaterial = standardMaterial diffuseMap:(shapeTexture) showInViewport:true;
 
 			if (objTable == undefined) then
@@ -102,8 +102,8 @@ rollout copyRight "Copyright License" width:800 height:300
 					
 					if (objData == newObject or objData == endTable) then ( 
 
-						Takepics (20) (genLoc*3)
-						ExportObject()
+						Takepics (20) (genLoc*3) --genLoc*3 in the distance parameter roughly 
+						ExportObject()				   --allows the camera to adjust to different stack heights
 						deleteObjStack()
 						print objName
 
